@@ -12,6 +12,7 @@
 
 h1, h2, h3, h4 {
   font-family: AmaticRegular;
+  color: $text;
 }
 
 h1 {
@@ -21,4 +22,18 @@ h1 {
 
 p {
   font-family: LatoRegular;
+  color: $text;
+  font-size: 1.1rem;
+}
+
+a {
+  color: $cta;
+  font-family: LatoRegular;
+  padding-bottom: 3px;
+
+  &:hover, &:focus {
+    color: darken($cta, 15%);
+    text-decoration: none;
+    border-bottom: 1px dotted $cta;
+  }
 }
