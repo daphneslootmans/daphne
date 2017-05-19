@@ -1,0 +1,24 @@
+@font-face {
+  font-family: AmaticRegular;
+  src: url('../fonts/AmaticSC-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url('../fonts/Lato-Regular.ttf');
+  font-weight: normal;
+}
+
+h1, h2, h3, h4 {
+  font-family: AmaticRegular;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 0.25em;
+}
+
+p {
+  font-family: LatoRegular;
+}
