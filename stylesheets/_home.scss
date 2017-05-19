@@ -12,9 +12,16 @@ header {
     letter-spacing: 1px;
     color: $white;
     text-transform: uppercase;
+    padding: 0.7rem 2rem;
+    border: 2px solid $cta;
+
+    i {
+      margin-left: 0.5rem;
+    }
 
     &:hover, &:focus {
-
+      background-color: $white;
+      color: $cta;
     }
   }
 }
