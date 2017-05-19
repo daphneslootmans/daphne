@@ -1,0 +1,40 @@
+header {
+  padding: 2rem 0;
+
+  a.btn-contact {
+    background-color: $cta;
+    font-family: LatoRegular;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: $white;
+    text-transform: uppercase;
+    padding: 0.7rem 2rem;
+    border: 2px solid $cta;
+
+    i {
+      margin-left: 0.5rem;
+    }
+
+    &:hover, &:focus {
+      background-color: $white;
+      color: $cta;
+    }
+  }
+}
+.container-fluid {
+  padding: 0;
+  max-width: 1600px;
+}
+
+.intro {
+  background: $blue;
+  padding: 2rem;
+
+  h1, p {
+    color: $white;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
