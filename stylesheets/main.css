@@ -1,0 +1,123 @@
+@font-face {
+  font-family: AmaticRegular;
+  src: url("../fonts/AmaticSC-Regular.ttf");
+  font-weight: normal; }
+@font-face {
+  font-family: LatoRegular;
+  src: url("../fonts/Lato-Regular.ttf");
+  font-weight: normal; }
+h1, h2, h3, h4 {
+  font-family: AmaticRegular;
+  color: #26383B; }
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 0.25em; }
+
+h2 {
+  font-size: 2.5rem; }
+
+p {
+  font-family: LatoRegular;
+  color: #26383B;
+  font-size: 1.1rem; }
+
+a {
+  color: #FF6347;
+  font-family: LatoRegular;
+  padding-bottom: 3px; }
+  a:hover, a:focus {
+    color: #fa2600;
+    text-decoration: none;
+    border-bottom: 1px dotted #FF6347; }
+
+header {
+  padding: 2rem 0; }
+  header a.btn-contact {
+    background-color: #FF6347;
+    font-family: LatoRegular;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #FFFDFD;
+    text-transform: uppercase;
+    padding: 0.7rem 2rem;
+    border: 2px solid #FF6347; }
+    header a.btn-contact i {
+      margin-left: 0.5rem; }
+    header a.btn-contact:hover, header a.btn-contact:focus {
+      background-color: #FFFDFD;
+      color: #FF6347; }
+
+.container-fluid {
+  padding: 0; }
+
+.bg-light {
+  background: #E5F1F3; }
+
+.banner {
+  background: #80BBC6;
+  padding: 2rem;
+  margin-bottom: 4rem; }
+  .banner h1, .banner p {
+    color: #FFFDFD; }
+  .banner p {
+    font-size: 1.4rem; }
+
+.intro {
+  margin-bottom: 4rem; }
+
+.project {
+  padding: 4rem 2rem;
+  position: relative;
+  margin-bottom: 2rem; }
+  .project .arrow-left, .project .arrow-right {
+    position: relative;
+    top: -10px; }
+  .project .arrow-left {
+    transform: scaleX(-1);
+    left: -20px; }
+  .project .arrow-right {
+    right: -20px; }
+
+.image-link {
+  border-radius: 20rem;
+  border: 2px solid #FFFDFD;
+  display: inline-block;
+  width: 20rem;
+  height: 20rem;
+  padding: 0;
+  transition: border 0.2s ease-in-out; }
+  .image-link:hover, .image-link:focus {
+    border: 2px solid #FF6347; }
+  .image-link .image {
+    display: block;
+    border-radius: 20rem;
+    width: 100%;
+    height: 100%; }
+
+footer p {
+  font-size: 0.8rem; }
+
+@media (max-width: 767px) {
+  header a.btn-contact {
+    width: 100%;
+    margin: 0.5rem; }
+
+  .image-link {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 0; }
+
+  .arrow-right, .arrow-left {
+    display: none; }
+
+  .project p {
+    margin-bottom: 2rem; } }
+@media (min-width: 768px) {
+  .project:nth-child(even) h2, .project:nth-child(even) p {
+    padding-right: 4rem; }
+
+  .project:nth-child(odd) h2, .project:nth-child(odd) p {
+    padding-left: 4rem; } }
+
+/*# sourceMappingURL=main.css.map */
