@@ -40,7 +40,7 @@ header {
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -53,10 +53,6 @@ header {
   position: relative;
   margin-bottom: 2rem;
 
-  h2, p {
-    padding: 0 2rem;
-  }
-
   %arrow {
     position: relative;
     top: -10px;
@@ -65,17 +61,16 @@ header {
   .arrow-left {
     @extend %arrow;
     transform: scaleX(-1);
-    left: -50px;
+    left: -20px;
   }
 
   .arrow-right {
     @extend %arrow;
-    right: -50px;
+    right: -20px;
   }
 }
 
 .image-link {
-  margin: 0 2rem;
   border-radius: 20rem;
   border: 2px solid $white;
   display: inline-block;
@@ -93,5 +88,49 @@ header {
     border-radius: 20rem;
     width: 100%;
     height: 100%;
+  }
+}
+
+footer {
+   p {
+     font-size: 0.8rem;
+   }
+}
+
+@media (max-width: 767px){
+  header {
+    a.btn-contact {
+      width: 100%;
+      margin: 0.5rem;
+    }
+  }
+
+  .image-link {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 0;
+  }
+
+  .arrow-right, .arrow-left {
+    display: none;
+  }
+
+  .project p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .project:nth-child(even) {
+    h2, p {
+      padding-right: 4rem;
+    }
+  }
+
+  .project:nth-child(odd) {
+    h2, p {
+      padding-left: 4rem;
+    }
   }
 }
